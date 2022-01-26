@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.announcements.FilterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarInFilter"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.TransportMarket" />
+
+    <!-- kryteria -->
+    <TextView
+        android:id="@+id/TitleTextInFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="right"
+        android:text="Podaj kryteria wyszukiwania"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarInFilter" />
+
+    <!-- marka -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/podajMarke"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/MarkaCar"
+        app:endIconMode="clear_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleTextInFilter">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/markaSamochodu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- model -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/podajModel"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/ModelCar"
+        app:endIconMode="clear_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podajMarke">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/modelSamochodu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- rok min -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/podajRokMin"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/RokMinCar"
+        app:endIconMode="clear_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podajModel">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rokSamochoduMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="datetime" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- rok max -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/podajRokMax"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/RokMaxCar"
+        app:endIconMode="clear_text"
+        app:layout_constraintStart_toEndOf="@+id/podajRokMin"
+        app:layout_constraintTop_toBottomOf="@+id/podajModel">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rokSamochoduMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="datetime" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- moc silnika min -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/podajMocSilnikaMin"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/MocSilnikaMinCar"
+        app:endIconMode="clear_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podajRokMax">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mocSamochoduMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- moc silnika max -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/podajMocSilnikaMax"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/MocSilnikaMaxCar"
+        app:endIconMode="clear_text"
+        app:layout_constraintStart_toEndOf="@+id/podajMocSilnikaMin"
+        app:layout_constraintTop_toBottomOf="@+id/podajRokMin">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mocSamochoduMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- pojemność silnika max -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/podajPojemnoscSilnika"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/PojemnoscSilnikaCar"
+        app:endIconMode="clear_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podajMocSilnikaMin">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pojemnoscSilnika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- pojemność silnika max -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/podajKosztWynajmu"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/kosztWynajmuCar"
+        app:endIconMode="clear_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podajPojemnoscSilnika">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/kosztWynajmu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Czy premium -->
+    <TextView
+        android:id="@+id/textCzypremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/CzyPremiumCar"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podajKosztWynajmu" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:checkedButton="@+id/radio_button_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCzypremium">
+
+
+        <RadioButton
+            android:id="@+id/radio_button_tak"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/CzyPremiumTakCar"
+            android:textColor="#252525" />
+
+        <RadioButton
+            android:id="@+id/radio_button_nie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/CzyPremiumNieCar"
+            android:textColor="#252525" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/zapisz_filter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/zapiszCar"
+        android:textColor="@color/white"
+        style="@style/Widget.MaterialComponents.Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/wyczysc_filter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/wyczyscCar"
+        app:icon="@drawable/ic_cancel_icon"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/zapisz_filter_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_mobile"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.transportmarket.navigation.home.HomeFragment"
+        android:label="Strona Główna"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/announcementsFragment"
+        android:name="com.example.transportmarket.navigation.announcements.AnnouncementsFragment"
+        android:label="Ogłoszenia"
+        tools:layout="@layout/fragment_announcements" />
+    <fragment
+        android:id="@+id/myAnnouncementsFragment"
+        android:name="com.example.transportmarket.navigation.myannouncements.MyAnnouncementsFragment"
+        android:label="Moje Ogłoszenia"
+        tools:layout="@layout/fragment_my_announcements" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.transportmarket.navigation.settings.SettingsFragment"
+        android:label="Ustawienia"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.transportmarket.navigation.gallery.GalleryFragment"
+        android:label="Galeria"
+        tools:layout="@layout/fragment_gallery" />
+</navigation>

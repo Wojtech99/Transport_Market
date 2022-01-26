@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/ic_strona_glowna"
+            android:title="@string/nav_strona_glowna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <item
+            android:id="@+id/announcementsFragment"
+            android:icon="@drawable/ic_ogloszenia"
+            android:title="@string/nav_ogloszenia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <item
+            android:id="@+id/galleryFragment"
+            android:icon="@drawable/ic_photo"
+            android:title="@string/nav_galeria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </group>
+
+    <item android:title="@string/nav_moje_konto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <menu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <item
+                android:id="@+id/myAnnouncementsFragment"
+                android:icon="@drawable/ic_moje_ogloszenia"
+                android:title="@string/nav_moje_ogloszenia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <item
+                android:id="@+id/settingsFragment"
+                android:icon="@drawable/ic_ustawienia"
+                android:title="@string/nav_ustawienia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Transport Market</string>
+
+    <!-- nav_menu -->
+    <string name="nav_header_subtitle">Razem Pojedziemy na koniec Świata</string>
+
+    <string name="nav_strona_glowna">Strona Główna</string>
+    <string name="nav_galeria">Galeria</string>
+    <string name="nav_ogloszenia">Ogłoszenia</string>
+    <string name="nav_moje_ogloszenia">Moje Ogłoszenia</string>
+    <string name="nav_ustawienia">Ustawienia</string>
+    <string name="nav_moje_konto">Moje Konto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- single_item_for_listview strings -->
+    <string name="carMarkaSamochodu">Marka pojazd</string>
+
+    <string name="carModelSamochodu">Sprinter</string>
+
+
+    <string name="carMocSilnika">Moc pojazdu: %s</string>
+
+    <string name="carPojemnoscSilnika">Pojemność Silnika: %s</string>
+
+    <string name="carkosztWynajmu">%s zł</string>
+
+
+    <!-- Filter activity -->
+    <string name="MarkaCar">Marka:</string>
+    <string name="ModelCar">Model:</string>
+
+    <string name="RokMinCar">Rok produkcji od:</string>
+    <string name="RokMaxCar">Rok produkcji do:</string>
+
+    <string name="MocSilnikaMinCar">Moc silnika od (km):</string>
+    <string name="MocSilnikaMaxCar">Moc silnika do (km):</string>
+
+    <string name="PojemnoscSilnikaCar">Pojemność silnika (cm3):</string>
+    <string name="kosztWynajmuCar">Koszt wynajmu (zł):</string>
+
+    <string name="CzyPremiumCar">Czy pokazywać ogłoszenia premium:</string>
+    <string name="CzyPremiumTakCar">Tak</string>
+    <string name="CzyPremiumNieCar">Nie</string>
+
+    <string name="zapiszCar">Zapisz</string>
+    <string name="wyczyscCar">Wyczyść wszystko</string>
+
+
+    <!--AnnouncementsDetailActivity  -->
+    <string name="opis">Opis:</string>
+    <string name="opisCarDetail">Produkowana od roku 1995 seria ciężkich aut dostawczych i lekkich samochodów ciężarowych o masie całkowitej do 5 ton.
+        Mercedes Sprinter zastąpił w gamie niemieckiego producenta rodzinę modeli T1.
+        Odniósł sukces rynkowy, którym przebił swojego poprzednika - model od wprowadzenia na rynek sprzedano w liczbie prawie 2 milionów egzemplarzy,
+        co czyni go jednym z najchętniej nabywanych aut w swojej klasie. Trzecia generacja samochodu oferowana jest od roku 2006. Bliźniaczym autem Mercedesa Sprintera jest Volkswagen Crafter.
+        W Stanach Zjednoczonych sprzedawany jest pod nazwą Dodge Sprinter.</string>
+
+    <string name="pdfOpisDetail">Opis Działalności PDF</string>
+    <string name="pdfButtonDetail">Pobierz PDF</string>
+
+    <string name="mapDeatail">Mapa</string>
+    <string name="textMapDeatail">Lokalizacja</string>
+
+    <string name="uriText">Samochody do kupienia: </string>
+    <string name="addressUrl">https://www.otomoto.pl/dostawcze/?search[new_used]=on</string>
+
+    <string name="zapytanieOgloszenieDetail">Wyślij wiadomość:</string>
+    <string name="zapytanieButton">Wyślij</string>
+
+    <string name="czyPremiumTakDetail">Ogłoszenie Premium</string>
+    <string name="czyPremiumNieDetail">Zwykłe Ogłoszenie</string>
+</resources>
